@@ -9,9 +9,9 @@ function agregarAmigo (){
 function agregarTextoElemento(elemento, texto){
 
     let elementoHMTL = document.querySelector(elemento);
-    elementoHMTL = texto;
+    elementoHMTL.innerHTML = texto;
 
 }
 
-agregarTextoElemento('h1', '!Amigo Secreto!')
-agregarTextoElemento('h2','Digíta el nombre de tus amigos');
+agregarTextoElemento('h1', '¡Amigo Secreto!')
+agregarTextoElemento('h2','Digita el nombre de tus amigos');
