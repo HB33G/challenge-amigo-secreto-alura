@@ -8,6 +8,7 @@ function agregarTextoElemento(elemento, texto){
     elementoHMTL.innerHTML = texto;
 
 }
+
 function agregarAmigo (){
 
     let nombreAmigo = document.getElementById('amigo').value;
@@ -22,10 +23,20 @@ function agregarAmigo (){
     alert ('Ingresaste un espacio vacío, por favor ingresa un nombre valido')
    }else{
     listaNombresDeAmigos.push(nombreAmigo)
+    limpiarCaja ();
+    
    }
 
    console.log (listaNombresDeAmigos)
 }
+
+function limpiarCaja (){
+
+    document.querySelector('#amigo').value = '';
+
+}
+
+
 
 
 
