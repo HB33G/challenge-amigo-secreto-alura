@@ -22,7 +22,7 @@ function agregarAmigo (){
    }else{
     listaNombresDeAmigos.push(nombreAmigo)
     limpiarCaja ();
-    agregarTextoElemento ('#listaAmigos', listaNombresDeAmigos)
+    mostrarNombreAmigos();
 
    }
 
@@ -35,6 +35,15 @@ function limpiarCaja (){
 
 }
 
+function mostrarNombreAmigos (){
+
+    let nuevoNombreAmigo = document.getElementById('amigo').value;
+
+    let nombreAmigo = document.createElement('li');
+    nombreAmigo.innerHTML = nuevoNombreAmigo ;
+
+    document. getElementById('listaAmigos').appendChild (nombreAmigo);
+}
 
 
 
