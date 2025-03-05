@@ -17,7 +17,7 @@ function agregarAmigo (){
    }
 
    if (amigos.includes(nombreAmigo)){
-    alert(`'${nombreAmigo}' ya está en la lista.`);
+    alert(`¡Ups! Ya has agregado '${nombreAmigo}', intenta añadir otro nombre.`);
     return;
    }
 
