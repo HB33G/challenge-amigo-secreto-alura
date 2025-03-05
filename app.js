@@ -42,7 +42,8 @@ function mostrarNombreAmigos (){
     let nombreAmigo = document.createElement('li');
     nombreAmigo.textContent = nuevoNombreAmigo ;
 
-    document. getElementById('listaAmigos').appendChild (nombreAmigo);
+    document.getElementById('listaAmigos').appendChild (nombreAmigo);
+    
 }
 
 
