@@ -1,4 +1,4 @@
-let listaNombresDeAmigos = [];
+let amigos = [];
 
 function agregarTextoElemento(elemento, texto){
 
@@ -17,16 +17,18 @@ function agregarAmigo (){
     */
 
 
-   if (nombreAmigo == '' ){
-    alert ('Ingresaste un espacio vacío, por favor ingresa un nombre valido')
+   if (nombreAmigo === '' ){
+
+    alert ('Ingresaste un espacio vacío, por favor ingresa un nombre valido');
+
    }else{
-    listaNombresDeAmigos.push(nombreAmigo)
-    limpiarCaja ();
-    mostrarNombreAmigos();
 
-   }
+    amigos.push(nombreAmigo);
+    
+}
+   limpiarCaja ();
 
-   console.log (listaNombresDeAmigos)
+   console.log (amigos)
 }
 
 function limpiarCaja (){
