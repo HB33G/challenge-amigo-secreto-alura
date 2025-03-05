@@ -12,17 +12,15 @@ function agregarAmigo (){
     let nombreAmigo = document.getElementById('amigo').value;
 
    if (nombreAmigo === '' ){
-
     alert ('Ingresaste un espacio vacío, por favor ingresa un nombre valido');
-
-   }else{
+    return
+   }
 
     amigos.push(nombreAmigo);
-    }
-
-   limpiarCaja ();
+    limpiarCaja ();
    mostrarNombreAmigos();
    console.log(amigos);
+
 }
 
 function limpiarCaja (){
@@ -33,7 +31,7 @@ function limpiarCaja (){
 
 function mostrarNombreAmigos (){
 
-    let listaAmigos = document.getElementById ('listaAmigos');
+    let listaAmigos = document.getElementById('listaAmigos');
     listaAmigos.innerHTML = '';
 
     for (let i = 0; i < amigos.length; i++){
@@ -52,11 +50,9 @@ function sortearAmigo(){
         return
     }
     let amigoAleatorio = Math.floor(Math.random()*amigos.length);
-    console.log(amigoAleatorio)
     let seleccionAmigo = amigos[amigoAleatorio];
-    console.log(seleccionAmigo)
-    let mostrarSeleccion = document.getElementById('resultado');
-    mostrarSeleccion.innerHTML = seleccionAmigo;
+    
+    agregarTextoElemento ('#resultado',`El azar ha hablado... ¡Y tu eres el elegido, ${seleccionAmigo} !`)
 
 }
 
