@@ -10,12 +10,6 @@ function agregarTextoElemento(elemento, texto){
 function agregarAmigo (){
 
     let nombreAmigo = document.getElementById('amigo').value;
-    /*
-    console.log(typeof(nombreAmigo))
-    console.log (nombreAmigo)
-    console.log (nombreAmigo == '') 
-    */
-
 
    if (nombreAmigo === '' ){
 
@@ -24,11 +18,11 @@ function agregarAmigo (){
    }else{
 
     amigos.push(nombreAmigo);
-    
-}
-   limpiarCaja ();
+    }
 
-   console.log (amigos)
+   limpiarCaja ();
+   mostrarNombreAmigos();
+   console.log(amigos);
 }
 
 function limpiarCaja (){
@@ -39,13 +33,16 @@ function limpiarCaja (){
 
 function mostrarNombreAmigos (){
 
-    let nuevoNombreAmigo = document.getElementById('amigo').value;
+    let listaAmigos = document.getElementById ('listaAmigos');
+    listaAmigos.innerHTML = '';
 
-    let nombreAmigo = document.createElement('li');
-    nombreAmigo.textContent = nuevoNombreAmigo ;
+    for (let i = 0; i < amigos.length; i++){
 
-    document.getElementById('listaAmigos').appendChild (nombreAmigo);
-    
+    let etiquetaLi = document.createElement('li');
+    etiquetaLi.textContent = amigos[i];
+
+    listaAmigos.appendChild(etiquetaLi);
+    }
 }
 
 
