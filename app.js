@@ -40,7 +40,7 @@ function mostrarNombreAmigos (){
     let nuevoNombreAmigo = document.getElementById('amigo').value;
 
     let nombreAmigo = document.createElement('li');
-    nombreAmigo.innerHTML = nuevoNombreAmigo ;
+    nombreAmigo.textContent = nuevoNombreAmigo ;
 
     document. getElementById('listaAmigos').appendChild (nombreAmigo);
 }
