@@ -47,10 +47,11 @@ function mostrarNombreAmigos (){
 
 function sortearAmigo(){
 
-    if (amigos.length = 0){
-        alert('No hay elementos para sortear');
+    if (amigos.length == 0 ) {
+        alert('No hay nombres para sortear');
+        return
     }
-    let amigoAleatorio = Math.floor(Math.random()*(amigos.length+1));
+    let amigoAleatorio = Math.floor(Math.random()*amigos.length);
     console.log(amigoAleatorio)
     let seleccionAmigo = amigos[amigoAleatorio];
     console.log(seleccionAmigo)
