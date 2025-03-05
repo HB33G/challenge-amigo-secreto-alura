@@ -45,6 +45,19 @@ function mostrarNombreAmigos (){
     }
 }
 
+function sortearAmigo(){
+
+    if (amigos.length = 0){
+        alert('No hay elementos para sortear');
+    }
+    let amigoAleatorio = Math.floor(Math.random()*(amigos.length+1));
+    console.log(amigoAleatorio)
+    let seleccionAmigo = amigos[amigoAleatorio];
+    console.log(seleccionAmigo)
+    let mostrarSeleccion = document.getElementById('resultado');
+    mostrarSeleccion.innerHTML = seleccionAmigo;
+
+}
 
 
 
