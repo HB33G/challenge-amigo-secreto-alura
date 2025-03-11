@@ -58,7 +58,7 @@ function sortearAmigo(){
     let amigoAleatorio = Math.floor(Math.random()*amigos.length);
     let seleccionAmigo = amigos[amigoAleatorio];
 
-    agregarTextoElemento ('#resultado',`El azar ha hablado... ¡Y tú eres el elegido, ${seleccionAmigo} !`);
+    agregarTextoElemento ('#resultado',`El azar ha hablado... ¡Y te ha elegido a ti , ${seleccionAmigo} !`);
 
     let limpiarLista = document.getElementById('listaAmigos');
     limpiarLista.innerHTML = '';
