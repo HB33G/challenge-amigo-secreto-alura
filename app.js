@@ -12,12 +12,12 @@ function agregarAmigo (){
     let nombreAmigo = document.getElementById('amigo').value.trim();
 
    if (nombreAmigo === '' ){
-    alert ('Ingresaste un espacio vacío, por favor ingresa un nombre valido');
+    alert ('Ingresaste un espacio vacío, por favor ingresa un nombre.');
     return;
    }
 
    if (amigos.includes(nombreAmigo)){
-    alert(`¡Ups! Ya has agregado '${nombreAmigo}', intenta añadir otro nombre.`);
+    alert(`¡Ups! Ya has agregado a '${nombreAmigo}', intenta añadir un nombre distinto.`);
     return;
    }
 
@@ -51,7 +51,7 @@ function mostrarNombreAmigos (){
 function sortearAmigo(){
 
     if (amigos.length === 0 ) {
-        alert('No hay nombres para sortear');
+        alert('No hay nombres para sortear.');
         return;
     }
 
